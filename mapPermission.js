@@ -10,13 +10,13 @@ function mapPermissionName(input){
 	var permissionMap = input[1];
 	var permissionTypeMap = input[2];
 	var attribute = Object.keys(obj);
-	var typemap = Object.keys(permissionTypeMap);
+	var typeMap = Object.keys(permissionTypeMap);
 	var map = Object.keys(permissionMap);
 	//权限类别映射
 	for(var i = 0; i < attribute.length; i++){
-		for(var j = 0; j < typemap.length; j++){
-			if(attribute[i] === typemap[j]){
-				obj[attribute[i]].name = permissionTypeMap[typemap[j]];
+		for(var j = 0; j < typeMap.length; j++){
+			if(attribute[i] === typeMap[j]){
+				obj[attribute[i]].name = permissionTypeMap[typeMap[j]];
 			}
 		}
 	}
